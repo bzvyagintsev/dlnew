@@ -1,0 +1,34 @@
+.split-wrap
+    clearfix()
+
+    max-width: $container-width
+    margin-left: auto
+    margin-right: auto
+
+    .row
+        margin-right: 'calc(%s / -2)' % $gutter
+        margin-left: 'calc(%s / -2)' % $gutter
+        // border: 1px solid #777        
+        
+    grid-item($columns)
+        width: 'calc((100% - %s * %s) / %s)' % ($gutter $columns $columns)
+        margin-right: 'calc(%s / 2)' % $gutter
+        margin-left: 'calc(%s / 2)' % $gutter
+        // margin-bottom: $gutter
+        float: left
+
+    .grid
+        &--columns
+            &-five
+                clearfix()
+
+                .grid-item
+                    grid-item(5)
+
+                    // border: 1px solid #777
+                    
+            &-four
+                clearfix()
+
+                .grid-item
+                    grid-item(4)

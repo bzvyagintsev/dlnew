@@ -1,0 +1,22 @@
+.l-wrap
+    clearfix()
+    
+    max-width: $container-width
+    margin-left: auto
+    margin-right: auto
+
+    .five-column-grid
+        clearfix()
+
+        .grid-item
+            width: calc((100% - 20px * 4) / 5)
+            float: left
+            margin-right: $gutter
+            border: 1px solid #777
+            margin-bottom: $gutter
+            
+            &:nth-child(5n+5)
+                margin-right: 0
+                float: right
+            &:last-child
+                margin-right: 0

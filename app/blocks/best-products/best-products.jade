@@ -1,0 +1,22 @@
+include product/product
+
+mixin best-products()
+
+    - var item = {"name": "C-06", "price": "100", "dimensions": "600x600x20", "img": "grid-item.jpg"}
+
+    +b.best-products
+        +b.split-wrap
+            +b.row
+                +b.grid--columns-five
+                    +b.grid-item
+                        +b.selection-title
+                            +e.SPAN Лидеры
+                            +e.H2 Продаж
+                    +b.grid-item
+                        +product(item)
+                    +b.grid-item
+                        +product(item)
+                    +b.grid-item
+                        +product(item)
+                    +b.grid-item
+                        +product(item)

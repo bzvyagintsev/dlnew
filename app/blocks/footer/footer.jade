@@ -1,0 +1,15 @@
+include advantages/advantages
+
+mixin footer()
+	+advantages()
+
+	+b.footer&attributes(attributes)
+		+b.footer
+			+e text
+		+b.footer-bottom
+			+b.split-wrap
+				+b.footer-about ©2010-2017 Deco Line™</br>Официальный сайт
+				+b.footer-copyrights
+					+e.P Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов.
+				+b.footer-payment
+					+e.IMG(src='ya_kassa.svg')

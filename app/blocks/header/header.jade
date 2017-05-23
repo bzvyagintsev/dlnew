@@ -1,0 +1,52 @@
+include top-header/top-header
+include header-menu/header-menu
+
+mixin header()
+
+	+top-header()
+
+	+b.header&attributes(attributes)
+		+b.header-left
+			+b.header-logo
+		+b.header-right		
+			+b.header-info
+				+b.first-tel
+					+e.P.caption Ежедневно с 9:00 до 20:00
+					+e.A.tel +7 (495) 980 08 79
+					+e.P
+						+e.icon.lnr.lnr-phone-handset
+						+e.A(href="#").callback Заказать обратный звонок
+				+b.second-tel
+					+e.P.caption Есть вопросы? Звоните!					
+					+e.A.tel +7 (495) 980 08 79
+				+b.delivery
+					+e.A.text Доставка и оплата
+				+b.ecommerce
+					+b.wishlist
+						+e.SPAN.icon.lnr.lnr-heart
+					+b#cart.cart
+						+b.cart-icon
+							+e.SPAN.icon.lnr.lnr-cart
+							+e.SPAN.quantity 2
+						+e.A(href='#').text Корзина
+						+e.P.sum 24.000 руб.
+						+b#cart-popup.cart-popup
+							+e.P.heading Товары в корзине
+							+b.cart-popup-item
+								+e.IMG(src='cart-popup-item.jpg').cover
+								+e.title M-101
+								+e.P.quantity 315 Руб. X 24
+								+e.SPAN.delete-button х
+							+b.cart-popup-item
+								+e.IMG(src='cart-popup-item.jpg').cover
+								+e.title M-101
+								+e.P.quantity 315 Руб. X 24
+								+e.SPAN.delete-button х
+							+b.cart-popup-totals
+								+e.text ИТОГО
+								+e.sum 25 000 Руб.
+							+b.cart-popup-buttons
+								+e.A(href='#').cart-link Перейти в корзину >
+								+e.BUTTON.checkout-button.button--state-primary Оформить заказ
+			+header-menu()																
+				

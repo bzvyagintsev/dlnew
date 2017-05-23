@@ -1,0 +1,30 @@
+.header-menu
+    clearfix()
+
+    list-style: none
+    color: #fff
+    font-weight: bold
+
+    //width: 100%
+    //display: flex
+    //justify-content: space-around
+    
+    &-item
+        //flex: 1
+        //text-align: center                
+        display: inline-block
+
+        a
+            display: block
+            color: $header-menu-link
+            padding: 1em 2em
+
+            &:hover
+            &:focus
+            &:active
+                color: $header-menu-link-hover
+
+        &:first-child a
+            padding-left: 0
+                
+            

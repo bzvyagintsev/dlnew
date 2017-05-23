@@ -1,0 +1,54 @@
+.top-header
+    height: 2rem
+    line-height: 2rem
+
+    background-color: $second-background
+    
+    .info
+        float: left
+
+        width: 50%
+
+        &-links
+            font-size: 0.688rem 
+            // letter-spacing: 0.4px;
+            // text-transform: uppercase
+            
+            &__link
+                padding-right: 0.75em
+
+                color: $body-color 
+
+                transition: color 0.3s
+
+                &:hover
+                &:active
+                    color: $main-yellow
+                    // text-decoration: underline                      
+
+    .auth
+        float: left
+
+        width: 50%        
+
+        &-links
+            float: right
+
+            padding: 0 1em
+
+            font-size: 0.688rem
+            text-transform: uppercase
+            color: $black-color
+
+            background-color: $main-yellow
+
+            &__link
+                color: $black-color
+
+                border-bottom: 1px dotted $black-color
+
+                // transition: border-width 0.2s               
+
+                &:hover
+                &:active
+                    border-bottom-width: 0px

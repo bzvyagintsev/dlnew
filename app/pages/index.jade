@@ -1,0 +1,19 @@
+extends ../layouts/main
+include ../blocks/best-products/best-products
+include ../blocks/featured-cats/featured-cats
+include ../blocks/featured-products/featured-products
+
+block head
+	- var pageTitle = 'Главная';
+
+block content
+	+best-products()
+	+featured-cats()
+	+featured-products()
+
+block scripts
+	script(src="/assets/scripts/vendor/jquery-3.1.0.min.js")
+	
+	script(src="/assets/scripts/vendor/owl.carousel.js")
+
+	
